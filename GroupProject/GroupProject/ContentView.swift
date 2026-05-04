@@ -16,10 +16,19 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 28) {
+            
+            Spacer()
+            
             //score display
-            Text("Score: \(score)")
+            Text("Score")
+                .font(.title3)
+                .bold()
+            Text("\(score)")
                 .font(.largeTitle)
                 .bold()
+            
+            
+            Spacer()
             
             //Main tapping button
             Button {
